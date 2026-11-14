@@ -1,0 +1,86 @@
+
+.about {
+  background: rgba(11, 16, 28, 0.6);
+  color: white;
+  padding: 100px 10%;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.section-tag {
+  color: #008cff;
+  letter-spacing: 3px;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.about-text h2 {
+  font-size: 45px;
+  margin-bottom: 25px;
+}
+
+.about-text h2 span {
+  color: #008cff;
+}
+
+.about-text p {
+  color: #aab6c8;
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.about-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-card {
+  background: #111a2b;
+  border: 1px solid #1c3455;
+  border-radius: 12px;
+  padding: 25px;
+  transition: 0.3s;
+}
+
+.about-card:hover {
+  border-color: #008cff;
+  transform: translateX(8px);
+}
+
+.about-card h3 {
+  color: #008cff;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.about-card p {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.about-card span {
+  color: #8c9bb0;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about {
+    padding: 70px 6%;
+  }
+
+  .about-text h2 {
+    font-size: 36px;
+  }
+}
